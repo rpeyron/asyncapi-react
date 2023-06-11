@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const PlaygroundWrapper = styled.div``;
+export const PlaygroundWrapper = styled.div`
+  height: 100%;
+`;
 
 export const NavigationWrapper = styled.nav`
   display: flex;
@@ -54,8 +56,10 @@ export const NavigationLinks = styled.ul`
 `;
 
 export const NavigationLinksItem = styled.li`
-  display: inline-block;
+  display: block;
   margin-left: 12px;
+  align-self: center;
+  line-height: normal;
 
   > a {
     font-family: sans-serif;
@@ -64,6 +68,7 @@ export const NavigationLinksItem = styled.li`
     transition: 0.2s color linear;
     text-decoration: none;
     cursor: pointer;
+    font-size: x-large;
 
     &:hover {
       color: #c3e88d;
@@ -75,8 +80,8 @@ export const NavigationLink = styled.a``;
 
 export const ContentWrapper = styled.div`
   width: 100%;
-  height: calc(100vh - 50px);
-  min-height: calc(100vh - 50px);
+  height: calc(100% - 50px);
+  min-height: calc(100% - 50px);
   display: flex;
   justify-content: space-between;
   background: #f3f4f5;
@@ -84,16 +89,19 @@ export const ContentWrapper = styled.div`
 
 export const CodeEditorsWrapper = styled.div`
   background: rgb(38, 50, 56);
+  > div, > div > div {
+    height: 100%;
+  }
 `;
 
 export const AsyncApiWrapper = styled.div`
-  height: calc(100vh - 50px);
-  min-height: calc(100vh - 50px);
   overflow: auto;
 
   > .asyncapi {
     padding: 24px;
+    height: 100%;
   }
+
   > .asyncapi__error {
     margin: 24px;
   }
@@ -163,8 +171,8 @@ export const TabsContent = styled.div`
   color: #515559;
   line-height: 1.57;
   overflow: auto;
-  height: calc(100vh - 117px);
-  min-height: calc(100vh - 117px);
+  height: calc(100% - 117px);
+  min-height: calc(100% - 117px);
 `;
 
 export const TabWrapper = styled.li``;

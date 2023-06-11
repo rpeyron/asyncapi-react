@@ -24,18 +24,27 @@ const NavigationComponent: React.StatelessComponent = () => {
       url: 'https://github.com/asyncapi/asyncapi-react',
       iconName: 'github',
     },
+    /*
     {
       key: 'slack',
       url:
         'https://join.slack.com/t/asyncapi/shared_invite/enQtNDY3MzI0NjU5OTQyLWU4ZGU2MTg1MDIyZDFjMTI2YjkxYTdlMzc1NjgzYTAxZDM1YTg1NDhhMTE2NDliMjlhZjYxNzk0ZTE5ZGU1ZTg',
       iconName: 'slack',
     },
+    */
     {
       key: 'asyncapi',
       url: 'https://www.asyncapi.com/',
       iconName: 'globe',
       iconPrefix: 'fa',
     },
+    {
+      key: 'ref',
+      url: 'https://www.asyncapi.com/docs/reference/specification/latest',
+      iconName: 'book',
+      iconPrefix: 'fa',
+    },
+    
   ];
 
   return (

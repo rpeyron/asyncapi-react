@@ -5,8 +5,8 @@ const SplitWrapper: React.FunctionComponent = ({ children }) => (
   <Split
     style={{
       width: '100%',
-      height: 'calc(100vh - 50px)',
-      minHeight: 'calc(100vh - 50px)',
+      height: 'calc(100% - 50px)',
+      minHeight: 'calc(100% - 50px)',
       display: 'flex',
       background: '#f3f4f5',
     }}
